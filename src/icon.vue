@@ -4,6 +4,8 @@
   </svg>
 </template>
 <script>
+import './icon/iconfont' // iconfont的symbol引用方式在vue中使用
+
 export default {
   name: 'icon',
   props: ['name'] // icon名称：loading | left | right | down | settings | thumbs-up | download
