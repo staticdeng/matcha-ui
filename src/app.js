@@ -1,9 +1,15 @@
 import Vue from 'vue'
-import Button from './button.vue'
+import Button from './button'
+import ButtonGroup from './button-group'
 
 // 全局组件
-Vue.component('coco-button', Button)
+Vue.component('g-button', Button)
+Vue.component('g-button-group', ButtonGroup)
 
 new Vue({
-  el: '#app'
+  el: '#app',
+  data: {
+    loading1: false,
+    loading2: true,
+  }
 })
