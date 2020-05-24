@@ -20,7 +20,7 @@ module.exports = function (config) {
       logLevel: config.LOG_INFO,
       autoWatch: true,
       // 用chrome浏览器环境
-      browsers: ['Chrome'],
+      browsers: ['ChromeHeadless'],
       singleRun: false,
       concurrency: Infinity
     })
