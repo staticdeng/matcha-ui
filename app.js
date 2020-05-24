@@ -1,6 +1,6 @@
 import Vue from 'vue'
-import Button from './button'
-import ButtonGroup from './button-group'
+import Button from './src/button'
+import ButtonGroup from './src/button-group'
 
 // 全局组件
 Vue.component('g-button', Button)
