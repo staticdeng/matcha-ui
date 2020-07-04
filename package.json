@@ -1,10 +1,11 @@
 {
   "name": "matcha-ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "vue ui",
   "main": "dist/index.js",
   "scripts": {
     "parcel": "parcel --no-cache index.html",
+    "watch-test": "parcel watch test/* --no-cache & karma start",
     "test": "parcel build test/* --no-cache --no-minify && karma start --single-run",
     "build-index": "npx parcel build index.js --no-minify"
   },

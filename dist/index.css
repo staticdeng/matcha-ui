@@ -3,46 +3,57 @@
   height: 1em;
   vertical-align: middle; }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(360deg); } }
-
-.g-button {
+@keyframes spin-data-v-2a765e {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+.g-button[data-v-2a765e] {
   vertical-align: middle;
-  height: var(--button-height);
+  height: 32px;
   padding: 0 1em;
   font: inherit;
-  border-radius: var(--border-radius);
-  border: 1px solid var(--border-color);
-  background: var(--button-bg);
+  border-radius: 4px;
+  border: 1px solid #999;
+  background: white;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-size: var(--font-size);
-  line-height: var(--font-size); }
-  .g-button:hover {
-    border-color: var(--border-color-hover);
+  font-size: 14px;
+  line-height: 14px;
+}
+.g-button[data-v-2a765e]:hover {
+    border-color: #666;
     position: relative;
-    z-index: 1; }
-  .g-button:active {
-    background: var(--button-active-bg); }
-  .g-button:focus {
-    outline: none; }
-  .g-button > .g-icon {
+    z-index: 1;
+}
+.g-button[data-v-2a765e]:active {
+    background: #eee;
+}
+.g-button[data-v-2a765e]:focus {
+    outline: none;
+}
+.g-button > .g-icon[data-v-2a765e] {
     margin-right: 0.3em;
-    order: 1; }
-  .g-button > .content {
-    order: 2; }
-  .g-button .spin {
-    animation: spin 1s infinite linear; }
-  .g-button.icon-right > .g-icon {
+    order: 1;
+}
+.g-button > .content[data-v-2a765e] {
+    order: 2;
+}
+.g-button .spin[data-v-2a765e] {
+    animation: spin-data-v-2a765e 1s infinite linear;
+}
+.g-button.icon-right > .g-icon[data-v-2a765e] {
     order: 2;
     margin-right: 0;
-    margin-left: 0.3em; }
-  .g-button.icon-right > .content {
-    order: 1; }
+    margin-left: 0.3em;
+}
+.g-button.icon-right > .content[data-v-2a765e] {
+    order: 1;
+}
 
 .g-button-group {
   display: inline-flex;
@@ -52,9 +63,9 @@
     margin-left: -1px; }
     .g-button-group > .g-button:first-child {
       margin-left: 0;
-      border-top-left-radius: var(--border-radius);
-      border-bottom-left-radius: var(--border-radius); }
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px; }
     .g-button-group > .g-button:last-child {
-      border-top-right-radius: var(--border-radius);
-      border-bottom-right-radius: var(--border-radius); }
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px; }
 

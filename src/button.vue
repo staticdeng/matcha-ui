@@ -25,7 +25,14 @@ export default {
   }
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
+$button-height: 32px;
+$button-bg: white;
+$button-active-bg: #eee;
+$font-size: 14px;
+$border-radius: 4px;
+$border-color: #999;
+$border-color-hover: #666;
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -36,24 +43,24 @@ export default {
 }
 .g-button {
   vertical-align: middle;
-  height: var(--button-height);
+  height: $button-height;
   padding: 0 1em;
   font: inherit;
-  border-radius: var(--border-radius);
-  border: 1px solid var(--border-color);
-  background: var(--button-bg);
+  border-radius: $border-radius;
+  border: 1px solid $border-color;
+  background: $button-bg;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-size: var(--font-size);
-  line-height: var(--font-size);
+  font-size: $font-size;
+  line-height: $font-size;
   &:hover {
-    border-color: var(--border-color-hover);
+    border-color: $border-color-hover;
     position: relative;
     z-index: 1;
   }
   &:active {
-    background: var(--button-active-bg);
+    background: $button-active-bg;
   }
   &:focus {
     outline: none;
