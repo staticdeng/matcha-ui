@@ -19,7 +19,7 @@ describe('Button', () => {
       }
     }).$mount() // 实例化button组件并挂载在内存中
     const useElement = vm.$el.querySelector('use')
-    expect(useElement.getAttribute('xlink:href')).to.equal('#i-settings')
+    expect(useElement.getAttribute('xlink:href')).to.equal('#icon-settings')
     vm.$destroy()
   })
 
@@ -33,7 +33,7 @@ describe('Button', () => {
     }).$mount()
     const useElements = vm.$el.querySelectorAll('use')
     expect(useElements.length).to.equal(1)
-    expect(useElements[0].getAttribute('xlink:href')).to.equal('#i-loading')
+    expect(useElements[0].getAttribute('xlink:href')).to.equal('#icon-loading')
     vm.$destroy()
   })
 
