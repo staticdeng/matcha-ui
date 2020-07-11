@@ -8,19 +8,35 @@
     #app {
       margin: 20px;
     }
+    section{
+      margin: 20px 0;
+    }
   </style>
 </head>
 <body>
 <div id="app">
-  <g-button>按钮</g-button>
-  <g-button icon="settings" :loading="loading1" @click="loading1=!loading1">按钮</g-button>
-  <g-button :loading="loading2" icon-position="right">按钮</g-button>
-  <g-button icon="settings" icon-position="right">按钮</g-button>
-  <g-button-group>
-    <g-button icon="left">上一页</g-button>
-    <g-button>更多</g-button>
-    <g-button icon="right" icon-position="right">下一页</g-button>
-  </g-button-group>
+  <section>
+    <div>toast</div>
+    <g-button @click="autoClose">默认2s自动关闭toast</g-button>
+    <g-button @click="autoCloseDelay">延迟5s关闭</g-button>
+    <g-button @click="showClose">显示关闭按钮</g-button>
+    <g-button @click="onClose">点击关闭按钮回调</g-button>
+    <g-button @click="enableHtml">文字内容支持html</g-button>
+  </section>
+  
+  <section>
+    <div>button</div>
+    <g-button>按钮</g-button>
+    <g-button icon="settings" :loading="loading1" @click="loading1=!loading1">按钮</g-button>
+    <g-button :loading="loading2" icon-position="right">按钮</g-button>
+    <g-button icon="settings" icon-position="right">按钮</g-button>
+    <g-button-group>
+      <g-button icon="left">上一页</g-button>
+      <g-button>更多</g-button>
+      <g-button icon="right" icon-position="right">下一页</g-button>
+    </g-button-group>
+  </section>
+  
 </div>
 <script src="./app.js"></script>
 </body>

@@ -16,12 +16,23 @@ new Vue({
     loading1: false,
     loading2: true,
   },
-  mounted() {
-    this.showToast();
-  },
   methods: {
-    showToast() {
-      this.$toast('我是toast')
-    }
+    autoClose() {
+      this.$toast('默认2s关闭toast')
+    },
+    autoCloseDelay() {
+      this.$toast('延迟5s关闭toast', { autoCloseDelay: 5 })
+    },
+    showClose() {
+      this.$toast('显示关闭按钮', { showClose: true, autoClose: false })
+    },
+    onClose() {
+      this.$toast('点击关闭按钮回调', { showClose: true, autoClose: false, onClose: (vm) => {
+        alert('点击关闭按钮后回调')
+      }})
+    },
+    enableHtml() {
+      this.$toast('<strong>加粗标签</strong>加粗标签', { enableHtml: true })
+    },
   }
 })
