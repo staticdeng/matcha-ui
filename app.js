@@ -34,5 +34,14 @@ new Vue({
     enableHtml() {
       this.$toast('<strong>加粗标签</strong>加粗标签', { enableHtml: true })
     },
+    middle() {
+      this.$toast('位置居中', { position: 'middle' })
+    },
+    top() {
+      this.$toast('位置居上', { position: 'top' })
+    },
+    bottom() {
+      this.$toast('位置居下', { position: 'bottom' })
+    },
   }
 })
