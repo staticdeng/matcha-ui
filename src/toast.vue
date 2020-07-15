@@ -5,8 +5,8 @@
         <slot v-if="!enableHtml"></slot>
         <div v-else v-html="$slots.default[0]"></div>
       </div>
-      <span v-if="showClose" @click="execClose">
-        <mat-icon name="delete" class="toast-close"></mat-icon>
+      <span v-if="showClose" @click="execClose" class="toast-close">
+        <mat-icon name="delete" class="close-icon"></mat-icon>
       </span>
     </div>
   </div>
@@ -142,13 +142,15 @@ $animation-duration: 300ms;
     padding: 6px 0;
   }
   .toast-close {
-    fill: #fff;
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    cursor: pointer;
+    .close-icon {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      top: 5px;
+      right: 5px;
+      cursor: pointer;
+      fill: #fff;
+    }
   }
 }
 </style>
