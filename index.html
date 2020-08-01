@@ -17,27 +17,27 @@
 <div id="app">
   <section>
     <div>toast</div>
-    <g-button @click="autoClose">默认2s自动关闭toast</g-button>
-    <g-button @click="autoCloseDelay">延迟5s关闭</g-button>
-    <g-button @click="showClose">显示关闭按钮</g-button>
-    <g-button @click="onClose">点击关闭按钮回调</g-button>
-    <g-button @click="enableHtml">文字内容支持html</g-button>
-    <g-button @click="middle">默认位置居中</g-button>
-    <g-button @click="top">位置居上</g-button>
-    <g-button @click="bottom">位置居下</g-button>
+    <mat-button @click="autoClose">默认2s自动关闭toast</mat-button>
+    <mat-button @click="autoCloseDelay">延迟5s关闭</mat-button>
+    <mat-button @click="showClose">显示关闭按钮</mat-button>
+    <mat-button @click="onClose">点击关闭按钮回调</mat-button>
+    <mat-button @click="enableHtml">文字内容支持html</mat-button>
+    <mat-button @click="middle">默认位置居中</mat-button>
+    <mat-button @click="top">位置居上</mat-button>
+    <mat-button @click="bottom">位置居下</mat-button>
   </section>
   
   <section>
     <div>button</div>
-    <g-button>按钮</g-button>
-    <g-button icon="settings" :loading="loading1" @click="loading1=!loading1">按钮</g-button>
-    <g-button :loading="loading2" icon-position="right">按钮</g-button>
-    <g-button icon="settings" icon-position="right">按钮</g-button>
-    <g-button-group>
-      <g-button icon="left">上一页</g-button>
-      <g-button>更多</g-button>
-      <g-button icon="right" icon-position="right">下一页</g-button>
-    </g-button-group>
+    <mat-button>按钮</mat-button>
+    <mat-button icon="settings" :loading="loading1" @click="loading1=!loading1">按钮</mat-button>
+    <mat-button :loading="loading2" icon-position="right">按钮</mat-button>
+    <mat-button icon="settings" icon-position="right">按钮</mat-button>
+    <mat-button-group>
+      <mat-button icon="left">上一页</mat-button>
+      <mat-button>更多</mat-button>
+      <mat-button icon="right" icon-position="right">下一页</mat-button>
+    </mat-button-group>
   </section>
   
 </div>

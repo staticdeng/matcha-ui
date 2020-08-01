@@ -2,13 +2,13 @@ import Vue from 'vue'
 import Button from './src/button'
 import ButtonGroup from './src/button-group'
 import Toast from './src/toast'
-import plugin from './src/plugin'
+import ToastPlugin from './src/plugin'
 
 // 全局组件
-Vue.component('g-button', Button)
-Vue.component('g-button-group', ButtonGroup)
-Vue.component('g-toast', Toast)
-Vue.use(plugin)
+Vue.component('MatButton', Button)
+Vue.component('MatButtonGroup', ButtonGroup)
+Vue.component('MatToast', Toast)
+Vue.use(ToastPlugin)
 
 new Vue({
   el: '#app',

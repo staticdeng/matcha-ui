@@ -1,6 +1,6 @@
-import Button from './src/button'
-import ButtonGroup from './src/button-group'
-import Icon from './src/icon'
+import MatButton from './src/button'
+import MatButtonGroup from './src/button-group'
+import MatIcon from './src/icon'
 
 
-export { ButtonGroup, Button, Icon }
+export { MatButton, MatButtonGroup, MatIcon }
