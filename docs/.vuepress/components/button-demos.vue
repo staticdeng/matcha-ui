@@ -10,9 +10,7 @@
       <mat-button>更多</mat-button>
       <mat-button icon="right" icon-position="right">下一页</mat-button>
     </mat-button-group>
-    <pre>
-      <code>{{content}}</code>
-    </pre>
+    <pre><code>{{content}}</code></pre>
   </div>
 </template>
 <script>
@@ -25,8 +23,7 @@
     },
     data () {
       return {
-        content: `
-        <mat-button>默认按钮</mat-button>
+        content: `<mat-button>默认按钮</mat-button>
         <mat-button icon="settings" icon-position="right">带图标</mat-button>
         <mat-button :loading="true">加载图标</mat-button>
         <mat-button disabled>disabled</mat-button>

@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Button from './src/button'
 import ButtonGroup from './src/button-group'
 import Toast from './src/toast'
-import ToastPlugin from './src/plugin'
+import ToastPlugin from './src/toastPlugin'
 
 // 全局组件
 Vue.component('MatButton', Button)
